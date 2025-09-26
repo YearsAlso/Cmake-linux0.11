@@ -1,0 +1,44 @@
+---
+# Clang-Format configuration tailored for a C kernel-style project
+# - Uses tabs for indentation (historical kernel style)
+# - TabWidth = 8, IndentWidth = 8 to match file layout
+# - Function braces on next line (Allman style) as seen in sources
+# - Attach braces for statements (if/for/while) to preserve existing style
+
+Language: C
+BasedOnStyle: LLVM
+IndentWidth: 8
+TabWidth: 8
+UseTab: ForIndentation
+ContinuationIndentWidth: 8
+
+# Function declarations/definitions prefer opening brace on next line
+BreakBeforeBraces: Custom
+BreakBeforeBracesOptions:
+  Function: Break
+  AfterFunction: false
+  ControlStatement: Attach
+  AfterControlStatement: false
+  ObjCMethod: Attach
+
+# Keep preprocessor directives in column 0 where they are
+IndentPPDirectives: None
+
+# Do not reflow or join lines aggressively (keep original shaping)
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+
+# Preserve existing line breaks in macros and comments
+DisableFormat: false
+
+# Keep pointer alignment as in source (left for C style)
+PointerAlignment: Left
+
+# Keep simple formatting choices conservative to avoid massive diffs
+DerivePointerAlignment: false
+
+# Column limit: keep wide as in kernel sources
+ColumnLimit: 0
+
+...

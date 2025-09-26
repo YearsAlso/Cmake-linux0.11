@@ -1,0 +1,32 @@
+---
+# Conservative .clang-tidy for an old C kernel-style project
+# - Enable clang static analyzer checks (clang-analyzer-*)
+# - Enable a conservative set of bugprone and portability checks
+# - Avoid modernize/modern-cpp checks which are noisy for legacy C
+
+Checks: >
+  clang-analyzer-*,
+  bugprone-*,
+  portability-*
+
+# Do not escalate findings to errors by default
+WarningsAsErrors: ''
+
+# Run checks only on project headers/sources by default (adjustable)
+HeaderFilterRegex: '.*'
+
+# Use project's .clang-format when available
+FormatStyle: file
+
+# Avoid some analyzer-specific noisy behaviors for legacy code
+AnalyzeTemporaryDtors: false
+
+# You will need a compile_commands.json for full precision. If you don't
+# have one, tools like CMake (CMAKE_EXPORT_COMPILE_COMMANDS) or 'bear' can
+# generate it for you before running clang-tidy.
+
+CheckOptions:
+  - key:             bugprone-sizeof-expression.WarnOnTypeMismatch
+    value:           'false'
+
+...

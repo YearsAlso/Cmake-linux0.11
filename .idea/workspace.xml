@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cae097ea-059c-4573-8418-2fc4cb75ca2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.clang-format" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.clang-tidy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Cmake-linux0.11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/thriftCompiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ProjectSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/.suo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/Browse.VC.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/1a42cde4b5834173/EXECVE.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/24464dc5c2c70ae0/WRITE.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/307548af7d4afd93/FORK.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/363345edd82c4ddb/MAIN.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/44e4cd310e7dc799/LL_RW_BLK.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/5931416a111cf401/READ_WRITE.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/5f2a61f347669544/BLOCK_DEV.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/64b2b39014a5b3a3/TTY_IO.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/7fa9e779f5ff05b6/INODE.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/87ff0161273d35ce/SUPER.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/89e53004788015b/BUFFER.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/a05063f2b22f67f8/SCHED.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/b73c17ad82d76bff/TRAPS.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/c7e27e84d2386793/OPEN.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/d91f48522f2d9221/OPEN.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/dabb2a67c92109e7/NAMEI.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/ec62d8f7ff24ab22/CONSOLE.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/f310d4fea839e137/FILE_DEV.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/linux-0.11/v16/ipch/AutoPCH/ff127beff035e048/IOCTL.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot/bootsect.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot/head.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot/setup.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/bitmap.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/block_dev.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/buffer.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/char_dev.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/exec.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/fcntl.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/file_dev.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/file_table.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/inode.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/ioctl.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/namei.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/open.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/pipe.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/read_write.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/stat.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/super.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/truncate.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/a.out.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/asm/io.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/asm/memory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/asm/segment.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/asm/system.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/const.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ctype.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/errno.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/fcntl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/linux/config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/linux/fdreg.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/linux/fs.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/linux/hdreg.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/linux/head.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/linux/kernel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/linux/mm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/linux/sched.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/linux/sys.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/linux/tty.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/signal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/stdarg.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/stddef.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/string.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/sys/stat.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/sys/times.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/sys/types.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/sys/utsname.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/sys/wait.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/termios.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/time.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/unistd.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/utime.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/asm.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/blk_drv/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/blk_drv/blk.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/blk_drv/floppy.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/blk_drv/hd.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/blk_drv/ll_rw_blk.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/blk_drv/ramdisk.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/chr_drv/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/chr_drv/console.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/chr_drv/keyboard.S" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/chr_drv/rs_io.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/chr_drv/serial.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/chr_drv/tty_io.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/chr_drv/tty_ioctl.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/exit.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/fork.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/math/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/math/math_emulate.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/mktime.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/panic.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/printk.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/sched.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/signal.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/sys.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/system_call.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/traps.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/vsprintf.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/_exit.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/close.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ctype.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dup.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/errno.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/execve.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/malloc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/open.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/setsid.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/string.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/wait.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/write.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux-0.11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mm/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mm/memory.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mm/page.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/build.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot/setup.s">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-798">
+              <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot/bootsect.s">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4713" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/boot/head.s">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ROOT_DEV</find>
+      <find>PAGING_PAGES</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "YearsAlso"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/YearsAlso/Cmake-linux0.11.git",
+    "accountId": "7ef63d54-98ea-49eb-adf5-42fb0ec61e13"
+  }
+}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\software\maven-3.6.1\repo" />
+        <option name="mavenHome" value="C:/software/maven-3.6.1" />
+        <option name="userSettingsFile" value="C:\software\maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2025" />
+    <option name="minorVersion" value="2" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectId" id="33EVO30RXssgpxwFlCMOUSxMX0E" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="linux-0.11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="linux-0.11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="linux-0.11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="linux-0.11" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "F:/Cmake-linux0.11",
+    "settings.editor.selected.configurable": "CPPToolchains"
+  }
+}]]></component>
+  <component name="RunManager" selected="CMake 应用程序.native_build">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="info" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="info" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="legacy-all" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="legacy-all" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="legacy-clean" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="legacy-clean" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="legacy-image" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="legacy-image" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="legacy-tools" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="legacy-tools" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native-all" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-all" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native-blk-drivers" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-blk-drivers" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native-boot" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-boot" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native-chr-drivers" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-chr-drivers" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native-fs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-fs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native-head" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-head" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native-init" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-init" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native-kernel" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-kernel" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native-lib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-lib" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native-math" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-math" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native-mm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-mm" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native-system" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-system" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native-tools" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-tools" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native_blk_drv" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_blk_drv" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native_build" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_build" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="linux0_11" RUN_TARGET_NAME="native_build">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native_chr_drv" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_chr_drv" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native_fs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_fs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native_init_objects" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_init_objects" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native_kernel" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_kernel" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native_lib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_lib" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native_math" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_math" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native_system" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_system" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="linux0_11" RUN_TARGET_NAME="native_system">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake 应用程序.info" />
+      <item itemvalue="CMake 应用程序.legacy-all" />
+      <item itemvalue="CMake 应用程序.legacy-clean" />
+      <item itemvalue="CMake 应用程序.legacy-image" />
+      <item itemvalue="CMake 应用程序.legacy-tools" />
+      <item itemvalue="CMake 应用程序.native-all" />
+      <item itemvalue="CMake 应用程序.native-boot" />
+      <item itemvalue="CMake 应用程序.native-head" />
+      <item itemvalue="CMake 应用程序.native-fs" />
+      <item itemvalue="CMake 应用程序.native_fs" />
+      <item itemvalue="CMake 应用程序.native-init" />
+      <item itemvalue="CMake 应用程序.native_init_objects" />
+      <item itemvalue="CMake 应用程序.native-kernel" />
+      <item itemvalue="CMake 应用程序.native_kernel" />
+      <item itemvalue="CMake 应用程序.native-blk-drivers" />
+      <item itemvalue="CMake 应用程序.native_blk_drv" />
+      <item itemvalue="CMake 应用程序.native-chr-drivers" />
+      <item itemvalue="CMake 应用程序.native_chr_drv" />
+      <item itemvalue="CMake 应用程序.native-math" />
+      <item itemvalue="CMake 应用程序.native_math" />
+      <item itemvalue="CMake 应用程序.native-lib" />
+      <item itemvalue="CMake 应用程序.native_lib" />
+      <item itemvalue="CMake 应用程序.native-mm" />
+      <item itemvalue="CMake 应用程序.native-system" />
+      <item itemvalue="CMake 应用程序.native-tools" />
+      <item itemvalue="CMake 应用程序.native_build" />
+      <item itemvalue="CMake 应用程序.native_system" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cae097ea-059c-4573-8418-2fc4cb75ca2a" name="Default Changelist" comment="" />
+      <created>1602317502770</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602317502770</updated>
+      <workItem from="1602317505896" duration="1027000" />
+      <workItem from="1603118131191" duration="56000" />
+      <workItem from="1609234937695" duration="6645000" />
+      <workItem from="1758882184355" duration="899000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7728000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1391258" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Sequence" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="make" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/boot/setup.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-798">
+          <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot/bootsect.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4713" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot/head.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.12655602" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

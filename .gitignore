@@ -1,0 +1,86 @@
+# .gitignore for C/kernel-style project
+# ==================================
+
+# Build artifacts
+*.o
+*.ko
+*.obj
+*.elf
+*.map
+*.bin
+*.hex
+*.d
+
+# Static archives and libraries
+*.a
+*.lib
+*.la
+
+# Generated files and directories
+/build/
+/out/
+/bin/
+/tmp/
+*.img
+*.iso
+
+# Kernel-specific
+System.map
+vmlinuz
+initrd.img
+
+# Editor and IDE
+.vscode/
+/.vscode/*
+*.sublime-*
+*.swp
+*~
+# Emacs
+*~
+.#*
+.emacs.desktop
+.emacs.d/
+
+# macOS
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# CCache
+.ccache/
+
+# Logs
+*.log
+
+# Packager/tooling
+tags
+ctags
+cscope.*
+
+# Temporary and backup files
+*.bak
+*.tmp
+
+# Coverage and test
+coverage/
+*.gcda
+*.gcno
+
+# Python virtualenvs (if any tooling using python exists)
+venv/
+env/
+
+# Makefile specific
+Makefile~
+
+# Ignore compiled artifacts in subdirectories
+**/*.o
+**/*.obj
+
+# Keep track: allow these config files if intentionally checked in
+!/.vscode/settings.json
+!/.gitattributes
