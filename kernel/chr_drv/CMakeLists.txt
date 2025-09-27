@@ -14,8 +14,15 @@ set(CHR_SOURCES
 add_library(native_chr_drv STATIC ${CHR_SOURCES})
 target_include_directories(native_chr_drv PUBLIC ${CMAKE_SOURCE_DIR}/include)
 target_compile_options(native_chr_drv PRIVATE
-  -Wall -O -fstrength-reduce -fomit-frame-pointer -fcombine-regs -finline-functions -mstring-insns -nostdinc
+  -Wall -O -fstrength-reduce -fomit-frame-pointer -finline-functions -nostdinc
 )
+
+if(FCOMBINE_REGS_FLAG)
+  target_compile_options(native_chr_drv PRIVATE ${FCOMBINE_REGS_FLAG})
+endif()
+if(MSTRING_INSNS_FLAG)
+  target_compile_options(native_chr_drv PRIVATE ${MSTRING_INSNS_FLAG})
+endif()
 
 set_source_files_properties(${CMAKE_SOURCE_DIR}/kernel/chr_drv/keyboard.S PROPERTIES LANGUAGE ASM)
 

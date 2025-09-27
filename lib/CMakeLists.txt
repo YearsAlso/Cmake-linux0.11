@@ -21,9 +21,16 @@ set(LIB_SOURCES
 add_library(native_lib STATIC ${LIB_SOURCES})
 target_include_directories(native_lib PUBLIC ${CMAKE_SOURCE_DIR}/include)
 target_compile_options(native_lib PRIVATE
-  -Wall -O -fstrength-reduce -fomit-frame-pointer -fcombine-regs
-  -finline-functions -mstring-insns -nostdinc
+  -Wall -O -fstrength-reduce -fomit-frame-pointer
+  -finline-functions -nostdinc
 )
+# Append legacy flags only if the compiler supports them
+if(FCOMBINE_REGS_FLAG)
+  target_compile_options(native_lib PRIVATE ${FCOMBINE_REGS_FLAG})
+endif()
+if(MSTRING_INSNS_FLAG)
+  target_compile_options(native_lib PRIVATE ${MSTRING_INSNS_FLAG})
+endif()
 
 # Place output static lib as lib/lib.a to match original layout
 set_target_properties(native_lib PROPERTIES

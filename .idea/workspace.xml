@@ -45,15 +45,33 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug-WSL" ENABLED="true" CONFIG_NAME="Debug" TOOLCHAIN_NAME="WSL" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cae097ea-059c-4573-8418-2fc4cb75ca2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.devcontainer/CMakeUserPresets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.devcontainer/devcontainer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.devcontainer/postCreate.sh" afterDir="false" />
+    <list default="true" id="cae097ea-059c-4573-8418-2fc4cb75ca2a" name="Default Changelist" comment="chore(devcontainer): 添加开发容器配置支持&#10;&#10;- 添加 CMake 用户预设文件，配置默认构建设置&#10;- 创建 devcontainer.json，定义开发环境镜像和扩展- 添加 postCreate.sh 脚本，自动安装构建工具和内核开发依赖&#10;- 更新 workspace.xml，添加 CMake 运行配置和开发环境设置&#10;- 配置 VS Code 和 CLion 的 CMake 工具支持- 添加 QEMU 和 GRUB 工具支持内核镜像构建&#10;- 创建默认构建目录并初始化开发环境">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WORKSPACE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mm/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/BUILD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clang-format" beforeDir="false" afterPath="$PROJECT_DIR$/.clang-format" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README-cmake.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fs/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/init/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kernel/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel/blk_drv/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kernel/blk_drv/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel/chr_drv/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kernel/chr_drv/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel/math/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kernel/math/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build.c" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +81,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-WSL" />
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
@@ -126,6 +144,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="PerforceDirect.Settings">
+    <option name="CHARSET" value="none" />
+  </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2025" />
@@ -171,25 +192,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Cmake-linux0.11&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "bazel.project.detector.is.bazel.project": "true",
+    "cf.advertisement.text.overridden": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "F:/Cmake-linux0.11",
+    "settings.editor.selected.configurable": "MakefileSettings"
   }
-}</component>
-  <component name="RunManager" selected="CMake 应用程序.native_build">
+}]]></component>
+  <component name="RunManager" selected="CMake 应用程序.legacy-all">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -212,137 +240,142 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="info" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="info" CONFIG_NAME="Debug">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="info" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="info" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="legacy-all" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="legacy-all" CONFIG_NAME="Debug">
+    <configuration name="legacy-all" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="legacy-all" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="legacy-clean" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="legacy-clean" CONFIG_NAME="Debug">
+    <configuration name="legacy-clean" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="legacy-clean" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="legacy-image" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="legacy-image" CONFIG_NAME="Debug">
+    <configuration name="legacy-image" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="legacy-image" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="legacy-tools" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="legacy-tools" CONFIG_NAME="Debug">
+    <configuration name="legacy-tools" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="legacy-tools" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native-all" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-all" CONFIG_NAME="Debug">
+    <configuration name="native-all" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-all" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native-blk-drivers" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-blk-drivers" CONFIG_NAME="Debug">
+    <configuration name="native-blk-drivers" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-blk-drivers" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native-boot" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-boot" CONFIG_NAME="Debug">
+    <configuration name="native-boot" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-boot" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native-chr-drivers" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-chr-drivers" CONFIG_NAME="Debug">
+    <configuration name="native-chr-drivers" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-chr-drivers" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native-fs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-fs" CONFIG_NAME="Debug">
+    <configuration name="native-fs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-fs" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native-head" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-head" CONFIG_NAME="Debug">
+    <configuration name="native-head" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-head" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native-init" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-init" CONFIG_NAME="Debug">
+    <configuration name="native-init" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-init" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native-kernel" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-kernel" CONFIG_NAME="Debug">
+    <configuration name="native-kernel" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-kernel" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native-lib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-lib" CONFIG_NAME="Debug">
+    <configuration name="native-lib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-lib" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native-math" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-math" CONFIG_NAME="Debug">
+    <configuration name="native-math" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-math" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native-mm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-mm" CONFIG_NAME="Debug">
+    <configuration name="native-mm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-mm" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native-system" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-system" CONFIG_NAME="Debug">
+    <configuration name="native-system" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-system" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native-tools" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-tools" CONFIG_NAME="Debug">
+    <configuration name="native-tools" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native-tools" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native_blk_drv" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_blk_drv" CONFIG_NAME="Debug">
+    <configuration name="native_blk_drv" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_blk_drv" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native_build" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_build" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="linux0_11" RUN_TARGET_NAME="native_build">
+    <configuration name="native_build" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_build" CONFIG_NAME="Debug-WSL" RUN_TARGET_PROJECT_NAME="linux0_11" RUN_TARGET_NAME="native_build">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native_chr_drv" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_chr_drv" CONFIG_NAME="Debug">
+    <configuration name="native_chr_drv" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_chr_drv" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native_fs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_fs" CONFIG_NAME="Debug">
+    <configuration name="native_fs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_fs" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native_init_objects" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_init_objects" CONFIG_NAME="Debug">
+    <configuration name="native_init_objects" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_init_objects" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native_kernel" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_kernel" CONFIG_NAME="Debug">
+    <configuration name="native_kernel" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_kernel" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native_lib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_lib" CONFIG_NAME="Debug">
+    <configuration name="native_lib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_lib" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native_math" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_math" CONFIG_NAME="Debug">
+    <configuration name="native_math" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_math" CONFIG_NAME="Debug-WSL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="native_system" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_system" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="linux0_11" RUN_TARGET_NAME="native_system">
+    <configuration name="native_system" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="linux0_11" TARGET_NAME="native_system" CONFIG_NAME="Debug-WSL" RUN_TARGET_PROJECT_NAME="linux0_11" RUN_TARGET_NAME="native_system">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -392,8 +425,17 @@
       <workItem from="1609234937695" duration="6645000" />
       <workItem from="1758882184355" duration="899000" />
       <workItem from="1758883586661" duration="2153000" />
-      <workItem from="1758935192299" duration="17000" />
+      <workItem from="1758935192299" duration="3799000" />
     </task>
+    <task id="LOCAL-00001" summary="chore(devcontainer): 添加开发容器配置支持&#10;&#10;- 添加 CMake 用户预设文件，配置默认构建设置&#10;- 创建 devcontainer.json，定义开发环境镜像和扩展- 添加 postCreate.sh 脚本，自动安装构建工具和内核开发依赖&#10;- 更新 workspace.xml，添加 CMake 运行配置和开发环境设置&#10;- 配置 VS Code 和 CLion 的 CMake 工具支持- 添加 QEMU 和 GRUB 工具支持内核镜像构建&#10;- 创建默认构建目录并初始化开发环境">
+      <option name="closed" value="true" />
+      <created>1758935502968</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758935502968</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -441,6 +483,10 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore(devcontainer): 添加开发容器配置支持&#10;&#10;- 添加 CMake 用户预设文件，配置默认构建设置&#10;- 创建 devcontainer.json，定义开发环境镜像和扩展- 添加 postCreate.sh 脚本，自动安装构建工具和内核开发依赖&#10;- 更新 workspace.xml，添加 CMake 运行配置和开发环境设置&#10;- 配置 VS Code 和 CLion 的 CMake 工具支持- 添加 QEMU 和 GRUB 工具支持内核镜像构建&#10;- 创建默认构建目录并初始化开发环境" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(devcontainer): 添加开发容器配置支持&#10;&#10;- 添加 CMake 用户预设文件，配置默认构建设置&#10;- 创建 devcontainer.json，定义开发环境镜像和扩展- 添加 postCreate.sh 脚本，自动安装构建工具和内核开发依赖&#10;- 更新 workspace.xml，添加 CMake 运行配置和开发环境设置&#10;- 配置 VS Code 和 CLion 的 CMake 工具支持- 添加 QEMU 和 GRUB 工具支持内核镜像构建&#10;- 创建默认构建目录并初始化开发环境" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/boot/setup.s">

@@ -9,8 +9,12 @@ set(INIT_SOURCES
 add_library(native_init_objects OBJECT ${INIT_SOURCES})
 target_include_directories(native_init_objects PUBLIC ${CMAKE_SOURCE_DIR}/include)
 target_compile_options(native_init_objects PRIVATE
-  -Wall -O -fstrength-reduce -fomit-frame-pointer -fcombine-regs -nostdinc
+  -Wall -O -fstrength-reduce -fomit-frame-pointer -nostdinc
 )
+
+if(FCOMBINE_REGS_FLAG)
+  target_compile_options(native_init_objects PRIVATE ${FCOMBINE_REGS_FLAG})
+endif()
 
 set_target_properties(native_init_objects PROPERTIES
   POSITION_INDEPENDENT_CODE OFF

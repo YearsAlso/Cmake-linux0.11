@@ -25,9 +25,16 @@ target_include_directories(native_kernel PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
 # Apply compile options similar to the original Makefile
 target_compile_options(native_kernel PRIVATE
-  -Wall -O -fstrength-reduce -fomit-frame-pointer -fcombine-regs
-  -finline-functions -mstring-insns -nostdinc
+  -Wall -O -fstrength-reduce -fomit-frame-pointer
+  -finline-functions -nostdinc
 )
+
+if(FCOMBINE_REGS_FLAG)
+  target_compile_options(native_kernel PRIVATE ${FCOMBINE_REGS_FLAG})
+endif()
+if(MSTRING_INSNS_FLAG)
+  target_compile_options(native_kernel PRIVATE ${MSTRING_INSNS_FLAG})
+endif()
 
 # Make sure assembler files are treated as ASM language
 set_source_files_properties(${CMAKE_SOURCE_DIR}/kernel/asm.s PROPERTIES LANGUAGE ASM)

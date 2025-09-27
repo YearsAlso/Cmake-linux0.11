@@ -11,8 +11,15 @@ set(BLK_SOURCES
 add_library(native_blk_drv STATIC ${BLK_SOURCES})
 target_include_directories(native_blk_drv PUBLIC ${CMAKE_SOURCE_DIR}/include)
 target_compile_options(native_blk_drv PRIVATE
-  -Wall -O -fstrength-reduce -fomit-frame-pointer -fcombine-regs -finline-functions -mstring-insns -nostdinc -I${CMAKE_SOURCE_DIR}/kernel/blk_drv
+  -Wall -O -fstrength-reduce -fomit-frame-pointer -finline-functions -nostdinc -I${CMAKE_SOURCE_DIR}/kernel/blk_drv
 )
+
+if(FCOMBINE_REGS_FLAG)
+  target_compile_options(native_blk_drv PRIVATE ${FCOMBINE_REGS_FLAG})
+endif()
+if(MSTRING_INSNS_FLAG)
+  target_compile_options(native_blk_drv PRIVATE ${MSTRING_INSNS_FLAG})
+endif()
 
 set_target_properties(native_blk_drv PROPERTIES
   ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib

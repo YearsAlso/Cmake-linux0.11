@@ -26,8 +26,15 @@ set(FS_SOURCES
 add_library(native_fs STATIC ${FS_SOURCES})
 target_include_directories(native_fs PUBLIC ${CMAKE_SOURCE_DIR}/include)
 target_compile_options(native_fs PRIVATE
-  -Wall -O -fstrength-reduce -fcombine-regs -fomit-frame-pointer -mstring-insns -nostdinc
+  -Wall -O -fstrength-reduce -fomit-frame-pointer -nostdinc
 )
+
+if(FCOMBINE_REGS_FLAG)
+  target_compile_options(native_fs PRIVATE ${FCOMBINE_REGS_FLAG})
+endif()
+if(MSTRING_INSNS_FLAG)
+  target_compile_options(native_fs PRIVATE ${MSTRING_INSNS_FLAG})
+endif()
 
 set_target_properties(native_fs PROPERTIES
   ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib

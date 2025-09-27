@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(linux0_11 NONE)
+project(linux0_11 C)
 
 # This top-level CMakeLists provides a lightweight wrapper around the
 # existing Makefile so you can use CMake to drive the legacy build while
@@ -19,6 +19,27 @@ if(NOT MAKE_PROG)
 endif()
 
 message(STATUS "Using Make program: ${MAKE_PROG}")
+# Ensure the C language is enabled before running compiler-flag checks
+enable_language(C)
+
+# Detect support for a couple of legacy GCC flags used by the original project.
+# Modern toolchains may reject these options; detect them at configure time and
+# expose variables for subdirectories to use when available.
+include(CheckCCompilerFlag)
+check_c_compiler_flag("-fcombine-regs" COMPILER_SUPPORTS_FCOMBINE_REGS)
+check_c_compiler_flag("-mstring-insns" COMPILER_SUPPORTS_MSTRING_INSNS)
+if(COMPILER_SUPPORTS_FCOMBINE_REGS)
+  set(FCOMBINE_REGS_FLAG "-fcombine-regs")
+else()
+  set(FCOMBINE_REGS_FLAG "")
+endif()
+if(COMPILER_SUPPORTS_MSTRING_INSNS)
+  set(MSTRING_INSNS_FLAG "-mstring-insns")
+else()
+  set(MSTRING_INSNS_FLAG "")
+endif()
+message(STATUS "Compiler supports -fcombine-regs: ${COMPILER_SUPPORTS_FCOMBINE_REGS}")
+message(STATUS "Compiler supports -mstring-insns: ${COMPILER_SUPPORTS_MSTRING_INSNS}")
 
 # Wrapper target: run the original Makefile default target (Image)
 add_custom_target(legacy-all
